@@ -16,3 +16,16 @@ spaceship_clamp_tech.unit.ingredients = {
   { "se-rocket-science-pack", 1 },
   { "space-science-pack", 1 }
 }
+
+
+local spaceship_integrity_1 = data.raw["technology"]["se-spaceship-integrity-1"]
+spaceship_integrity_1.unit.ingredients = {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"production-science-pack", 1},
+    {"se-rocket-science-pack", 1},
+    {"space-science-pack", 1},
+    {"se-astronomic-science-pack-1", 1},
+    {"se-material-science-pack-1", 1},
+}
