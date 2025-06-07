@@ -3,6 +3,7 @@ Version: 1.0.1
 Date: 06. 06. 2025
   Bugfixes:
     - Fixed Spaceship Clamp still being locked behind Heavy Girder technology.
+    - Fixed Spaceship technology being locked behind Space Science instead of Rocket Science.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 06. 06. 2025
