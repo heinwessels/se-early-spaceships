@@ -6,6 +6,6 @@
   "dependencies": [
     "space-exploration >= 0.7.0"
   ],
-  "description": "Changes Space Exploration's spaceships to be available the same time as cargo rockets. The goal is to allow you to build your entire interplanetary logistics infrastructure using spaceships from the start.",
+  "description": "Changes Space Exploration's spaceships to be available the same time as cargo rockets. The goal is to allow you to build your entire interplanetary logistics infrastructure using spaceships from the start. This is now easier than ever since the addition of the spaceship scheduler allowing you to control spaceships like trains.",
   "factorio_version": "2.0"
 }
