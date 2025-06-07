@@ -15,4 +15,4 @@ This mod makes the [Space Exploration](https://mods.factorio.com/mod/se-early-sp
 
 # Credits
 
-- This mod is based on [Early Spaceship by Messier1071](https://mods.factorio.com/mod/Early-Spaceship).
+- This mod is based on [Early Spaceship by Messier1071](https://mods.factorio.com/mod/Early-Spaceship) and [No More Rocket Man by aotho](https://mods.factorio.com/mod/SENoMoreRocketMan).

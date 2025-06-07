@@ -7,6 +7,7 @@ spaceship_tech.unit.ingredients = {
 }
 
 local spaceship_clamp_tech = data.raw.technology["se-spaceship-clamps"]
+spaceship_clamp_tech.prerequisites = { "se-spaceship" }
 spaceship_clamp_tech.unit.ingredients = {
   { "automation-science-pack", 1 },
   { "logistic-science-pack", 1 },
