@@ -13,7 +13,7 @@ end
 local floor = data.raw.recipe["se-spaceship-floor"]
 if floor then
   floor.ingredients = {
-      {type = "item", name = "low-density-structure", amount = 10},
+      {type = "item", name = "low-density-structure", amount = 5},
       {type = "item", name = "se-heat-shielding", amount = 4}
   }
 end
