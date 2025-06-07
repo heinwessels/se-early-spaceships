@@ -1,4 +1,5 @@
 local spaceship_tech = data.raw.technology["se-spaceship"]
+spaceship_tech.prerequisites = { "se-thruster-suit" }
 spaceship_tech.unit.ingredients = {
   { "automation-science-pack", 1 },
   { "logistic-science-pack", 1 },
