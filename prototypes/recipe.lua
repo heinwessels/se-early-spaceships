@@ -3,7 +3,7 @@
 local console = data.raw.recipe["se-spaceship-console"]
 if console then
   console.ingredients = {
-      {type = "item", name = "glass", amount = 20},
+      {type = "item", name = aai_glass_name, amount = 20},
       {type = "item", name = "low-density-structure", amount = 20},
       {type = "item", name = "processing-unit", amount = 200},
       {type = "item", name = "rocket-control-unit", amount = 20},
@@ -22,7 +22,7 @@ local wall = data.raw.recipe["se-spaceship-wall"]
 if wall then
   wall.ingredients = {
       {type = "item", name = "steel-plate", amount = 10},
-      {type = "item", name = "glass", amount = 8},
+      {type = "item", name = aai_glass_name, amount = 8},
       {type = "item", name = "low-density-structure", amount = 4},
       {type = "item", name = "se-heat-shielding", amount = 4}
   }
