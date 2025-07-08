@@ -26,6 +26,5 @@ spaceship_integrity_1.unit.ingredients = {
     {"production-science-pack", 1},
     {"se-rocket-science-pack", 1},
     {"space-science-pack", 1},
-    {"se-astronomic-science-pack-1", 1},
     {"se-material-science-pack-1", 1},
 }

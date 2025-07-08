@@ -2,7 +2,7 @@
 Version: 1.0.2
 Date: ??. 06. 2025
   Features:
-    - Spaceship Structural Ingegrity now only locked behind Material Science Pack 1.
+    - Spaceship Structural Ingegrity now only locked behind Production Science.
   Changes:
     - Spaceship flooring recipe now requires 5 low density structure instead of 10.
 ---------------------------------------------------------------------------------------------------
