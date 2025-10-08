@@ -6,12 +6,9 @@ This mod makes the [Space Exploration](https://mods.factorio.com/mod/se-early-sp
 
 # Changes
 - Spaceship technology now locked behind Rocket Science. (Can be researched before going to space)
-- Spaceship Clamp technology now locked behind Space Science. (Can be researched right after reaching space)
+- Spaceship Clamp and Integrity 1 technologies are now locked behind Space Science. (Can be researched right after reaching space)
 - Adjusted recipes to allow crafting the basic spaceship parts on Nauvis before reaching space.
-
-
-# Compatibility
-- Krastorio 2 is not supported (yet).
+- Many more subtle changes for smoother gameplay.
 
 # Credits
 

@@ -1,30 +1,39 @@
-local spaceship_tech = data.raw.technology["se-spaceship"]
-spaceship_tech.prerequisites = { "se-thruster-suit" }
-spaceship_tech.unit.ingredients = {
-  { "automation-science-pack", 1 },
-  { "logistic-science-pack", 1 },
-  { "chemical-science-pack", 1 },
-  { "se-rocket-science-pack", 1 }
-}
+local putil = require("prototypes.putil")
 
-local spaceship_clamp_tech = data.raw.technology["se-spaceship-clamps"]
-spaceship_clamp_tech.prerequisites = { "se-spaceship" }
-spaceship_clamp_tech.unit.ingredients = {
-  { "automation-science-pack", 1 },
-  { "logistic-science-pack", 1 },
-  { "chemical-science-pack", 1 },
-  { "se-rocket-science-pack", 1 },
-  { "space-science-pack", 1 }
-}
+-- The first spaceship tech should be available at the same time as the cargo rocket
+-- So we basically just copy what that does for easier compatibility
+do
+  local tech = data.raw.technology["se-spaceship"]
+  local launchpad_tech = data.raw.technology["se-rocket-launch-pad"]
+  tech.prerequisites = table.deepcopy(launchpad_tech.prerequisites)
+  tech.unit.ingredients = table.deepcopy(launchpad_tech.unit.ingredients)
+end
 
+do
+  local tech = data.raw.technology["se-spaceship-clamps"]
+  tech.prerequisites = { "se-spaceship" }
+  putil.remove_se_tech_ingredients(tech)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+end
 
-local spaceship_integrity_1 = data.raw["technology"]["se-spaceship-integrity-1"]
-spaceship_integrity_1.unit.ingredients = {
-    {"automation-science-pack", 1},
-    {"logistic-science-pack", 1},
-    {"chemical-science-pack", 1},
-    {"production-science-pack", 1},
-    {"se-rocket-science-pack", 1},
-    {"space-science-pack", 1},
-    {"se-material-science-pack-1", 1},
-}
+do
+  local tech = data.raw["technology"]["se-spaceship-integrity-1"]
+  tech.prerequisites = { "se-spaceship" }
+  putil.remove_se_tech_ingredients(tech)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+end
+
+do
+  local tech = data.raw["technology"]["se-spaceship-integrity-2"]
+  tech.prerequisites = { "se-spaceship", "utility-science-pack" }
+  putil.remove_se_tech_ingredients(tech)
+  putil.add_tech_ingredient(tech, "utility-science-pack", 1)
+end
+
+do
+  local tech = data.raw["technology"]["se-spaceship-integrity-3"]
+  putil.remove_se_tech_ingredients(tech)
+  putil.add_tech_ingredient(tech, "se-astronomic-science-pack-1", 1)
+end
+
+-- Then go A2M1?
