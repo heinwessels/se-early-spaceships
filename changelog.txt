@@ -2,7 +2,8 @@
 Version: 1.0.3
 Date: ??. ??. 2025
   Changes:
-    - Move Spaceship Integrity techs earlier in tech tree, starting after Space Science.
+    - Moved Spaceship Integrity techs earlier in tech tree, starting after Space Science.
+    - Moved Spaceship Ion Engine to after Utility and Production Science.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 08. 07. 2025

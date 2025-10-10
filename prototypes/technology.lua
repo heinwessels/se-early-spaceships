@@ -17,10 +17,19 @@ do
 end
 
 do
+  local tech = data.raw["technology"]["se-ion-engine"]
+  -- Ion engine seems to similar to Integrity 1 in cost
+  putil.remove_se_space_tech_ingredients(tech)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+  putil.add_tech_ingredient(tech, "production-science-pack", 1)
+  putil.add_tech_ingredient(tech, "utility-science-pack", 1)
+end
+-- Not touching anti-matter engine, as it's all locked behind DSS
+
+do
   local tech = data.raw["technology"]["se-spaceship-integrity-1"]
   tech.prerequisites = { "se-spaceship" }
   putil.remove_se_space_tech_ingredients(tech)
-  putil.add_tech_ingredient(tech, "space-science-pack", 1)
 end
 
 do
