@@ -2,12 +2,12 @@
 Version: 1.0.3
 Date: ??. ??. 2025
   Changes:
-    - Spaceship Structural Ingegrity 1 now locked behind Space Science.
+    - Move Spaceship Integrity techs earlier in tech tree, starting after Space Science.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 08. 07. 2025
   Features:
-    - Spaceship Structural Ingegrity now only locked behind Production Science.
+    - Spaceship Structural Integrity now only locked behind Production Science.
   Changes:
     - Spaceship flooring recipe now requires 5 low density structure instead of 10.
   Bugfixes:
