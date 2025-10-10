@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.3
+Version: 1.1.0
 Date: ??. ??. 2025
   Changes:
     - Moved Spaceship Integrity techs earlier in tech tree, starting after Space Science.
