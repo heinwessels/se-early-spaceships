@@ -11,6 +11,10 @@ This mod makes the [Space Exploration](https://mods.factorio.com/mod/space-explo
 - Adjusted recipes to allow crafting the basic spaceship parts on Nauvis before reaching space.
 - Many more subtle changes for smoother gameplay.
 
+# Can you add this to an existing save?
+
+Yes. It's safe to add this to your playthrough regardless of how far you are through the tech tree.
+
 # Credits
 
 - The mods this is based on: [Early Spaceship by Messier1071](https://mods.factorio.com/mod/Early-Spaceship) and [No More Rocket Man by aotho](https://mods.factorio.com/mod/SENoMoreRocketMan).
