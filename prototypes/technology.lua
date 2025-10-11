@@ -28,35 +28,40 @@ end
 
 do
   local tech = data.raw["technology"]["se-spaceship-integrity-1"]
-  tech.prerequisites = { "se-spaceship" }
+  tech.prerequisites = { "se-spaceship", "space-science-pack" }
   putil.remove_se_space_tech_ingredients(tech)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
 end
 
 do
   local tech = data.raw["technology"]["se-spaceship-integrity-2"]
   tech.prerequisites = { "se-spaceship-integrity-1" }
   putil.remove_se_space_tech_ingredients(tech)
-  putil.add_tech_ingredient(tech, "utility-science-pack", 1)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+  putil.add_tech_ingredient(tech, "production-science-pack", 1)
 end
 
 do
   local tech = data.raw["technology"]["se-spaceship-integrity-3"]
   putil.remove_se_space_tech_ingredients(tech)
-  putil.add_tech_ingredient(tech, "utility-science-pack", 1)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+  putil.add_tech_ingredient(tech, "production-science-pack", 1)
   putil.add_tech_ingredient(tech, "se-astronomic-science-pack-1", 1)
 end
 
 do
   local tech = data.raw["technology"]["se-spaceship-integrity-4"]
   putil.remove_se_space_tech_ingredients(tech)
-  putil.add_tech_ingredient(tech, "utility-science-pack", 1)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+  putil.add_tech_ingredient(tech, "production-science-pack", 1)
   putil.add_tech_ingredient(tech, "se-astronomic-science-pack-2", 1)
 end
 
 do
   local tech = data.raw["technology"]["se-spaceship-integrity-5"]
   putil.remove_se_space_tech_ingredients(tech)
-  putil.add_tech_ingredient(tech, "utility-science-pack", 1)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+  putil.add_tech_ingredient(tech, "production-science-pack", 1)
   putil.add_tech_ingredient(tech, "se-astronomic-science-pack-3", 1)
   putil.add_tech_ingredient(tech, "se-material-science-pack-1", 1)
 end
@@ -64,7 +69,8 @@ end
 do
   local tech = data.raw["technology"]["se-spaceship-integrity-6"]
   putil.remove_se_space_tech_ingredients(tech)
-  putil.add_tech_ingredient(tech, "utility-science-pack", 1)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+  putil.add_tech_ingredient(tech, "production-science-pack", 1)
   putil.add_tech_ingredient(tech, "se-astronomic-science-pack-3", 1)
   putil.add_tech_ingredient(tech, "se-material-science-pack-2", 1)
 end
@@ -72,7 +78,8 @@ end
 do
   local tech = data.raw["technology"]["se-spaceship-integrity-7"]
   putil.remove_se_space_tech_ingredients(tech)
-  putil.add_tech_ingredient(tech, "utility-science-pack", 1)
+  putil.add_tech_ingredient(tech, "space-science-pack", 1)
+  putil.add_tech_ingredient(tech, "production-science-pack", 1)
   putil.add_tech_ingredient(tech, "se-astronomic-science-pack-3", 1)
   putil.add_tech_ingredient(tech, "se-material-science-pack-3", 1)
 end
