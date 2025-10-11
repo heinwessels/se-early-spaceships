@@ -1,4 +1,4 @@
-
+---@cast aai_glass_name -?
 
 local console = data.raw.recipe["se-spaceship-console"]
 if console then
