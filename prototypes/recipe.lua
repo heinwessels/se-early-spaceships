@@ -38,16 +38,27 @@ if gate then
   }
 end
 
-local engine = data.raw.recipe["se-spaceship-rocket-engine"]
-if engine then
-  engine.category = "crafting-with-fluid"
-  engine.ingredients = {
+local rocket_engine = data.raw.recipe["se-spaceship-rocket-engine"]
+if rocket_engine then
+  rocket_engine.category = "crafting-with-fluid"
+  rocket_engine.ingredients = {
       {type = "item", name = "pump", amount = 4},
       {type = "item", name = "steel-plate", amount = 20},
       {type = "item", name = "se-heat-shielding", amount = 20},
       {type = "item", name = "pipe", amount = 20},
       {type = "item", name = "electric-engine-unit", amount = 10},
       {type = "fluid", name = "lubricant", amount= 25},
+  }
+end
+
+local ion_engine = data.raw.recipe["se-spaceship-ion-engine"]
+if ion_engine then
+  ion_engine.category = "crafting-with-fluid"
+  ion_engine.ingredients = {
+      {type = "item", name = "se-spaceship-rocket-engine", amount = 1},
+      {type = "item", name = "low-density-structure", amount = 40},
+      {type = "item", name = "se-cryonite-rod", amount = 40},
+      {type = "item", name = "se-holmium-plate", amount = 40},
   }
 end
 
