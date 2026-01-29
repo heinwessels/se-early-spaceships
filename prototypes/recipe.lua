@@ -51,17 +51,6 @@ if rocket_engine then
   }
 end
 
-local ion_engine = data.raw.recipe["se-spaceship-ion-engine"]
-if ion_engine then
-  ion_engine.category = "crafting-with-fluid"
-  ion_engine.ingredients = {
-      {type = "item", name = "se-spaceship-rocket-engine", amount = 1},
-      {type = "item", name = "low-density-structure", amount = 40},
-      {type = "item", name = "se-cryonite-rod", amount = 40},
-      {type = "item", name = "se-holmium-plate", amount = 40},
-  }
-end
-
 local booster = data.raw.recipe["se-spaceship-rocket-booster-tank"]
 if booster then
   booster.category = "crafting-with-fluid"
@@ -72,6 +61,27 @@ if booster then
       {type = "item", name = "se-heat-shielding", amount = 10},
       {type = "fluid", name = "lubricant", amount= 25},
       {type = "item", name = "electric-engine-unit", amount = 4},
+  }
+end
+
+local ion_engine = data.raw.recipe["se-spaceship-ion-engine"]
+if ion_engine then
+  ion_engine.ingredients = {
+      {type = "item", name = "se-spaceship-rocket-engine", amount = 1},
+      {type = "item", name = "low-density-structure", amount = 40},
+      {type = "item", name = "se-cryonite-rod", amount = 40},
+      {type = "item", name = "se-holmium-plate", amount = 40},
+  }
+end
+
+local ion_booster = data.raw.recipe["se-spaceship-ion-booster-tank"]
+if ion_booster then
+  ion_booster.ingredients = {
+      {type = "item", name = "storage-tank", amount = 1},
+      {type = "item", name = "electric-engine-unit", amount = 4},
+      {type = "item", name = "low-density-structure", amount = 40},
+      {type = "item", name = "se-cryonite-rod", amount = 40},
+      {type = "item", name = "se-holmium-plate", amount = 40},
   }
 end
 
