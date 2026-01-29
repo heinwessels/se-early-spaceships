@@ -18,7 +18,12 @@ end
 
 do
   local tech = data.raw["technology"]["se-ion-engine"]
-  tech.prerequisites = { "se-spaceship", "production-science-pack", "utility-science-pack" }
+  tech.prerequisites = {
+    "se-spaceship",
+    "production-science-pack",
+    "utility-science-pack",
+    "se-processing-holmium"
+  }
   -- Ion engine seems to similar to Integrity 1 in cost
   putil.remove_se_space_tech_ingredients(tech)
   putil.remove_tech_ingredient(tech, "se-holium-solenoid")
