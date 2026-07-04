@@ -40,7 +40,7 @@ end
 
 local rocket_engine = data.raw.recipe["se-spaceship-rocket-engine"]
 if rocket_engine then
-  rocket_engine.category = "crafting-with-fluid"
+  rocket_engine.categories = {"crafting-with-fluid"}
   rocket_engine.ingredients = {
       {type = "item", name = "pump", amount = 4},
       {type = "item", name = "steel-plate", amount = 20},
@@ -53,7 +53,7 @@ end
 
 local booster = data.raw.recipe["se-spaceship-rocket-booster-tank"]
 if booster then
-  booster.category = "crafting-with-fluid"
+  booster.categories = { "crafting-with-fluid" }
   booster.ingredients = {
       {type = "item", name = "pump", amount = 4},
       {type = "item", name = "steel-plate", amount = 10},
@@ -87,7 +87,7 @@ end
 
 local clamp = data.raw.recipe["se-spaceship-clamp"]
 if clamp then
-  clamp.category = "advanced-crafting"
+  clamp.categories = { "advanced-crafting" }
   clamp.ingredients = {
       {type = "item", name = "se-heat-shielding", amount = 10},
       {type = "item", name = "low-density-structure", amount = 20},
@@ -100,14 +100,14 @@ end
 -- We need space pipes to build a spaceship too
 for _, pipe_type in pairs{"se-space-pipe", "se-space-pipe-to-ground"} do
   local pipe = data.raw.recipe[pipe_type]
-  if pipe then pipe.category = "crafting" end
+  if pipe then pipe.categories = { "crafting" } end
 end
 -- Now loop through the long space pipes to make sure they're still in space-crafting
 -- Otherwise they're also craftable on the ground, which seems overkill.
 for pipe_name, _ in pairs(data.raw["storage-tank"]) do
   if string.find(pipe_name, "se%-space%-pipe%-long%-") then
     local recipe = data.raw.recipe[pipe_name]
-    if recipe then recipe.category = "space-crafting"end
+    if recipe then recipe.categories = { "space-crafting" } end
   end
 end
 
